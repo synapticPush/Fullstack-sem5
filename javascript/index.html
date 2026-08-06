@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1 id="title">DOM Practice Page</h1>
+        <p class="description">
+            Practice selecting and manipulating elements.
+        </p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Section -->
+    <section id="content">
+
+        <div class="card" id="card1">
+            <h2 class="card-title">Card One</h2>
+            <p class="card-text">
+                This is the first card.
+            </p>
+            <button class="btn">Read More</button>
+        </div>
+
+        <div class="card" id="card2">
+            <h2 class="card-title">Card Two</h2>
+            <p class="card-text">
+                This is the second card.
+            </p>
+            <button class="btn">Read More</button>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Form -->
+    <form id="studentForm">
+
+        <label>Name:</label><br>
+        <input
+            type="text"
+            id="name"
+            class="input-field"
+            placeholder="Enter name">
+
+        <br><br>
+
+        <label>Email:</label><br>
+        <input
+            type="email"
+            id="email"
+            class="input-field"
+            placeholder="Enter email">
+
+        <br><br>
+
+        <label>Course</label><br>
+
+        <select id="course">
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>BSc</option>
+            <option>MCA</option>
+        </select>
+
+        <br><br>
+
+        <button id="submitBtn">
+            Submit
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- List -->
+    <ul id="taskList">
+
+        <li class="task">Learn HTML</li>
+        <li class="task">Learn CSS</li>
+        <li class="task">Learn JavaScript</li>
+        <li class="task">Practice DOM</li>
+
+    </ul>
+
+    <hr>
+
+    <!-- Image -->
+    <img
+        id="profilePic"
+        class="image"
+        src="https://via.placeholder.com/150"
+        alt="Profile Image">
+
+    <hr>
+
+    <!-- Buttons -->
+    <div id="buttons">
+
+        <button id="changeTextBtn">
+            Change Text
+        </button>
+
+        <button id="changeColorBtn">
+            Change Color
+        </button>
+
+        <button id="addItemBtn">
+            Add List Item
+        </button>
+
+        <button id="removeItemBtn">
+            Remove Last Item
+        </button>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <p class="footer-text">
+            © 2026 DOM Practice
+        </p>
+
+    </footer>
+
+</body>
+</html>
+    <script>
+        const nav =document.querySelector('#navbar');
+        nav.style.backgroundColor = 'lightblue';
+
+        const btn = document.querySelector('#changeTextBtn');
+        btn.textContent = "new submit button";
+        btn.style.backgroundColor = 'green';
+
+
+       
+        btn.addEventListener('click', function() {
+            btn.textContent = "Button Clicked!";
+        });
+
+        const card1 = document.querySelector('#card1');
+
+        function changeColor() {
+            card1.style.backgroundColor = 'lightgreen';
+        }
+        btn.addEventListener('click', changeColor);
+    </script>
+
+
+</body>
+</html>
