@@ -1,0 +1,14 @@
+{
+  "name": "express-user-api",
+  "version": "1.0.0",
+  "description": "Simple Express.js API for getting and creating users",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.12"
+  }
+}
